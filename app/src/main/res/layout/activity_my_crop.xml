@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MyCropActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/iv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_download" />
+
+    <com.yalantis.ucrop.view.UCropView
+        android:id="@+id/u_crop_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/hsv_ratio"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_ratio"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/scale_scroll_view">
+
+        <LinearLayout
+            android:id="@+id/ll_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff000"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+
+    <com.yalantis.ucrop.view.widget.HorizontalScaleScrollView
+        android:id="@+id/scale_scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.76"
+        app:ucrop_interval="5dp"
+        app:ucrop_long_line_height="8dp"
+        app:ucrop_max_scale="90"
+        app:ucrop_min_scale="-90"
+        app:ucrop_scale_bottom="4dp"
+        app:ucrop_scale_width="1dp"
+        app:ucrop_indicator_width="2dp"
+        app:ucrop_indicator_height="16dp"
+        app:ucrop_short_line_height="5dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

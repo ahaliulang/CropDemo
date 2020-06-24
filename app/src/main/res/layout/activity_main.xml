@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <com.yalantis.ucrop.view.widget.HorizontalScaleScrollView
+        android:background="#474525"
+        android:id="@+id/scale_scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.76"
+        app:ucrop_indicator_height="100dp"
+        app:ucrop_indicator_width="2dp"
+        app:ucrop_interval="5dp"
+        app:ucrop_long_line_height="8dp"
+        app:ucrop_max_scale="90"
+        app:ucrop_min_scale="-90"
+        app:ucrop_scale_bottom="4dp"
+        app:ucrop_scale_width="1dp"
+        app:ucrop_short_line_height="5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

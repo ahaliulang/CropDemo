@@ -1,0 +1,2 @@
+rootProject.name='CropDemo'
+include ':app', ':lib_ucrop'
