@@ -26,7 +26,7 @@ android {
         abortOnError false
     }
 
-    resourcePrefix 'ucrop_'
+//    resourcePrefix 'ucrop_'
 
     sourceSets.main {
         jni.srcDirs = []

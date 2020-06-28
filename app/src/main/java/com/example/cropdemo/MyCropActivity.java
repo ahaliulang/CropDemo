@@ -22,7 +22,7 @@ import com.yalantis.ucrop.view.OverlayView;
 import com.yalantis.ucrop.view.TransformImageView;
 import com.yalantis.ucrop.view.UCropView;
 import com.yalantis.ucrop.view.widget.AspectRatioTextView;
-import com.yalantis.ucrop.view.widget.HorizontalScaleScrollView;
+import com.yalantis.ucrop.view.widget.ScaleView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,7 @@ public class MyCropActivity extends AppCompatActivity {
     private UCropView mUCropView;
     private GestureCropImageView mGestureCropImageView;
     private OverlayView mOverlayView;
-    private HorizontalScaleScrollView mScaleScrollView;
+    private ScaleView mScaleScrollView;
 
     private List<AspectRatioTextView> mRationTextViews = new ArrayList<>();
 

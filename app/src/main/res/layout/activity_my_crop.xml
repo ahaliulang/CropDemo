@@ -54,7 +54,7 @@
     </HorizontalScrollView>
 
 
-    <com.yalantis.ucrop.view.widget.HorizontalScaleScrollView
+    <com.yalantis.ucrop.view.widget.ScaleView
         android:id="@+id/scale_scroll_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

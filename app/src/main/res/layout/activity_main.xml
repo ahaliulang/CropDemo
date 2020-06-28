@@ -7,17 +7,17 @@
     android:background="#000000"
     tools:context=".MainActivity">
 
-    <com.yalantis.ucrop.view.widget.HorizontalScaleScrollView
+    <com.yalantis.ucrop.view.widget.ScaleView
         android:background="#474525"
         android:id="@+id/scale_scroll_view"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.76"
-        app:ucrop_indicator_height="100dp"
+        app:ucrop_indicator_height="10dp"
         app:ucrop_indicator_width="2dp"
         app:ucrop_interval="5dp"
         app:ucrop_long_line_height="8dp"
